@@ -1,7 +1,0 @@
-"measure_name","expression"
-"% of total revenue","DIVIDE([Total revenue], CALCULATE([Total revenue], ALL(menu_items)))"
-"Avg items Per order","[Total items sold]/[Total orders]"
-"Avg order Value","DIVIDE([Total revenue],[Total orders])"
-"Total items sold","COUNTROWS(order_details)"
-"Total orders","DISTINCTCOUNT(order_details[Order_ID])"
-"Total revenue","SUMX(order_details, RELATED(menu_items[Price]))"
